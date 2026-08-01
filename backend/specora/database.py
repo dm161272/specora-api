@@ -2,6 +2,6 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 from .config import MONGODB_URI, DATABASE_NAME
 
-client = AsyncIOMotorClient(MONGODB_URI)
+client = AsyncIOMotorClient("mongodb://localhost:27017")
 
-db = client[DATABASE_NAME]
+db = client["specora"]
